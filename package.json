@@ -1,0 +1,22 @@
+{
+  "name": "onplan-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OnPlan - Turn AI-generated plans into scheduled, trackable actions",
+  "workspaces": [
+    "apps/*",
+    "functions",
+    "shared/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build:web": "npm run build --workspace=apps/web",
+    "build:extension": "npm run build --workspace=apps/extension",
+    "build:functions": "npm run build --workspace=functions",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
