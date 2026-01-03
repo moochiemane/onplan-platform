@@ -1,5 +1,2 @@
-// Re-export schemas
+// Re-export all schemas and their inferred types
 export * from './schemas';
-
-// Export types
-export type { User, Task, Plan } from './schemas';
